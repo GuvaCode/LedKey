@@ -1,9 +1,0 @@
-object HideFrm: THideFrm
-  OnCreate = DataModuleCreate
-  OnDestroy = DataModuleDestroy
-  OldCreateOrder = False
-  Height = 150
-  HorizontalOffset = 590
-  VerticalOffset = 250
-  Width = 150
-end
