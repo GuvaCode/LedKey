@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="7">
+      <Unit0>
+        <Filename Value="ledkey.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="30" Y="16"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="munit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="HideFrm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="mUnit"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="10"/>
+        <CursorPos Y="27"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="../../../fpcupdeluxe/fpcsrc/rtl/objpas/classes/classesh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2039"/>
+        <CursorPos X="24" Y="2243"/>
+        <UsageCount Value="10"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="../../LedKey/src/munit.pas"/>
+        <UnitName Value="mUnit"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="37"/>
+        <CursorPos X="48" Y="48"/>
+        <UsageCount Value="10"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="../../../Development/Cross.Codebot-master/source/codebot.input.hotkeys.pas"/>
+        <UnitName Value="Codebot.Input.Hotkeys"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="582"/>
+        <CursorPos X="5" Y="640"/>
+        <UsageCount Value="10"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="../../../ct/CodeOcean/pl_ExSystem/samples/RunOnce/runoncemainfrm.pas"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="RunOnceMainFrm"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="6"/>
+        <CursorPos Y="20"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="../../../ct/CodeOcean/pl_ExSystem/samples/RunOnce/RunOnceDemo.lpr"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="14" Y="15"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit6>
+    </Units>
+    <JumpHistory Count="2" HistoryIndex="1">
+      <Position1>
+        <Filename Value="ledkey.lpr"/>
+        <Caret Line="10" Column="30"/>
+      </Position1>
+      <Position2>
+        <Filename Value="ledkey.lpr"/>
+        <Caret Line="18" Column="5"/>
+      </Position2>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>
