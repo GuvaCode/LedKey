@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
   <ProjectOptions>
-    <Version Value="10"/>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
     <General>
+      <Flags>
+        <MainUnitHasUsesSectionForAllUnits Value="False"/>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+      </Flags>
       <SessionStorage Value="InProjectDir"/>
       <MainUnit Value="0"/>
-      <Title Value="ledkey"/>
+      <Title Value="BasicDiffDemo1"/>
+      <UseAppBundle Value="False"/>
       <ResourceType Value="res"/>
-      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
     </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <VersionInfo>
+      <StringTable ProductVersion=""/>
+    </VersionInfo>
     <BuildModes Count="1">
       <Item1 Name="Default" Default="True"/>
     </BuildModes>
@@ -20,63 +33,49 @@
         <FormatVersion Value="1"/>
       </local>
     </RunParams>
-    <RequiredPackages Count="3">
+    <RequiredPackages Count="2">
       <Item1>
-        <PackageName Value="pl_exsystem"/>
+        <PackageName Value="etpackage"/>
       </Item1>
       <Item2>
-        <PackageName Value="codebot"/>
-      </Item2>
-      <Item3>
         <PackageName Value="LCL"/>
-      </Item3>
+      </Item2>
     </RequiredPackages>
-    <Units Count="4">
+    <Units Count="2">
       <Unit0>
-        <Filename Value="ledkey.lpr"/>
+        <Filename Value="BasicDiffDemo1.lpr"/>
         <IsPartOfProject Value="True"/>
       </Unit0>
       <Unit1>
-        <Filename Value="munit.pas"/>
+        <Filename Value="basicdiffdemo1mw.pas"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="mContainer"/>
         <HasResources Value="True"/>
-        <ResourceBaseClass Value="DataModule"/>
-        <UnitName Value="mUnit"/>
+        <UnitName Value="BasicDiffDemo1mw"/>
       </Unit1>
-      <Unit2>
-        <Filename Value="xtool.pas"/>
-        <IsPartOfProject Value="True"/>
-        <UnitName Value="XTool"/>
-      </Unit2>
-      <Unit3>
-        <Filename Value="uabout.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="AboutFrm"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="uAbout"/>
-      </Unit3>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="11"/>
-    <Target>
-      <Filename Value="../bin/$(TargetCPU)-$(TargetOS)/ledkey"/>
-    </Target>
+    <PathDelim Value="\"/>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <UnitOutputDirectory Value="../tmp/$(TargetCPU)-$(TargetOS)"/>
+      <UnitOutputDirectory Value="../xbin"/>
     </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <SyntaxMode Value="Delphi"/>
+      </SyntaxOptions>
+    </Parsing>
     <Linking>
-      <Debugging>
-        <GenerateDebugInfo Value="False"/>
-      </Debugging>
       <Options>
         <Win32>
           <GraphicApplication Value="True"/>
         </Win32>
       </Options>
     </Linking>
+    <Other>
+      <CustomOptions Value="-dBorland -dVer150 -dDelphi7 -dCompiler6_Up -dPUREPASCAL"/>
+    </Other>
   </CompilerOptions>
   <Debugging>
     <Exceptions Count="3">

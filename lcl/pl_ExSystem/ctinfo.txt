@@ -1,0 +1,9 @@
+=============================================
+  CodeTyphon Studio
+  Typhon IDE
+  Information file
+=============================================
+
+pl_ExSystem
+
+Ver 6.5.1 Date 17-04-2018
