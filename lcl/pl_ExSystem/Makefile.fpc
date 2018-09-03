@@ -1,0 +1,66 @@
+#   File generated automatically by Typhon IDE Package Manager
+#
+#   Makefile.fpc for pl_exsystem 6.5.1
+#
+#   This file was generated on 17/4/2018
+
+[package]
+name=pl_exsystem
+version=6.5.1
+
+[compiler]
+unittargetdir=lib/$(CPU_TARGET)-$(OS_TARGET)/$(LCL_PLATFORM)
+unitdir=source ../../packager/units/$(CPU_TARGET)-$(OS_TARGET) ../BaseUtils/lib/$(CPU_TARGET)-$(OS_TARGET) ../../lcl/units/$(CPU_TARGET)-$(OS_TARGET) ../../lcl/units/$(CPU_TARGET)-$(OS_TARGET)/$(LCL_PLATFORM) ../BaseControls/lib/$(CPU_TARGET)-$(OS_TARGET)/$(LCL_PLATFORM) ../BaseSynedit/units/$(CPU_TARGET)-$(OS_TARGET)/$(LCL_PLATFORM) ../BaseIdeintf/units/$(CPU_TARGET)-$(OS_TARGET)/$(LCL_PLATFORM) .
+includedir=source
+options= -MObjFPC -Sgi -O1 -g -gl -l -vewnhibq -dLCL -dLCL$(LCL_PLATFORM) $(DBG_OPTIONS)
+
+[target]
+units=pl_exsystem.pas
+
+[clean]
+files=$(wildcard $(COMPILER_UNITTARGETDIR)/*$(OEXT)) \
+      $(wildcard $(COMPILER_UNITTARGETDIR)/*$(PPUEXT)) \
+      $(wildcard $(COMPILER_UNITTARGETDIR)/*$(RSTEXT)) \
+      $(wildcard $(COMPILER_UNITTARGETDIR)/*.frm) \
+      $(wildcard $(COMPILER_UNITTARGETDIR)/*.res) \
+      $(wildcard $(COMPILER_UNITTARGETDIR)/*.rsj) \
+      $(wildcard $(COMPILER_UNITTARGETDIR)/*.compiled) \
+      $(wildcard *$(OEXT)) $(wildcard *$(PPUEXT)) $(wildcard *$(RSTEXT))
+
+[prerules]
+# LCL Platform
+ifndef LCL_PLATFORM
+ifeq ($(OS_TARGET),win32)
+LCL_PLATFORM=win32
+else
+ifeq ($(OS_TARGET),win64)
+LCL_PLATFORM=win32
+else
+ifeq ($(OS_TARGET),darwin)
+LCL_PLATFORM=carbon
+else
+LCL_PLATFORM=gtk2
+endif
+endif
+endif
+endif
+export LCL_PLATFORM
+
+DBG_OPTIONS=
+ifeq ($(OS_TARGET),darwin)
+DBG_OPTIONS=-gw
+endif
+
+[rules]
+.PHONY: cleartarget compiled all
+
+cleartarget:
+        -$(DEL) $(COMPILER_UNITTARGETDIR)/pl_exsystem$(PPUEXT)
+
+compiled:
+        $(CPPROG) -f Makefile.compiled $(COMPILER_UNITTARGETDIR)/pl_exsystem.compiled
+
+all: cleartarget $(COMPILER_UNITTARGETDIR) pl_exsystem$(PPUEXT) compiled
+
+distclean: clean
+        ${DELTREE} lib/$(CPU_TARGET)-$(OS_TARGET)/*

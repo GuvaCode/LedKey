@@ -74,6 +74,7 @@ begin
  if assigned(AboutFrm) then exit;
  AboutFrm:=TAboutFrm.Create(Self);
  AboutFrm.Show;
+// AboutFrm.Position:=poDesktopCenter;
 end;
 
 procedure TmContainer.ScrollLockClick(Sender: TObject);

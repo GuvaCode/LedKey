@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="4">
+    <PathDelim Value="\"/>
+    <Name Value="pl_exsystem"/>
+    <Type Value="RunAndDesignTime"/>
+    <Author Value="PilotLogic Software House"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <IncludeFiles Value="source"/>
+        <OtherUnitFiles Value="source"/>
+        <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)\$(LCLWidgetType)"/>
+      </SearchPaths>
+      <Parsing>
+        <SyntaxOptions>
+          <CStyleOperator Value="False"/>
+          <UseAnsiStrings Value="False"/>
+        </SyntaxOptions>
+      </Parsing>
+    </CompilerOptions>
+    <Description Value="Extra System Components fo CodeTyphon
+"/>
+    <Version Major="6" Minor="5" Release="1"/>
+    <Files Count="23">
+      <Item1>
+        <Filename Value="source\AllExSystemRegister.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="AllExSystemRegister"/>
+      </Item1>
+      <Item2>
+        <Filename Value="source\epiktimer.pas"/>
+        <UnitName Value="EpikTimer"/>
+      </Item2>
+      <Item3>
+        <Filename Value="source\ExSystem.inc"/>
+        <Type Value="Include"/>
+      </Item3>
+      <Item4>
+        <Filename Value="source\ExSystemConsts.pas"/>
+        <UnitName Value="ExSystemConsts"/>
+      </Item4>
+      <Item5>
+        <Filename Value="source\ExSystemMessages.pas"/>
+        <UnitName Value="ExSystemMessages"/>
+      </Item5>
+      <Item6>
+        <Filename Value="source\ExSystemMessages.inc"/>
+        <Type Value="Include"/>
+      </Item6>
+      <Item7>
+        <Filename Value="source\ExSystemUtils.pas"/>
+        <UnitName Value="ExSystemUtils"/>
+      </Item7>
+      <Item8>
+        <Filename Value="source\TplAppEventsUnit.pas"/>
+        <UnitName Value="TplAppEventsUnit"/>
+      </Item8>
+      <Item9>
+        <Filename Value="source\TplDiffUnit.pas"/>
+        <UnitName Value="TplDiffUnit"/>
+      </Item9>
+      <Item10>
+        <Filename Value="source\TplFileSearchUnit.pas"/>
+        <UnitName Value="TplFileSearchUnit"/>
+      </Item10>
+      <Item11>
+        <Filename Value="source\TplMemINIUnit.pas"/>
+        <UnitName Value="TplMemINIUnit"/>
+      </Item11>
+      <Item12>
+        <Filename Value="source\TplMemStreamUnit.pas"/>
+        <UnitName Value="TplMemStreamUnit"/>
+      </Item12>
+      <Item13>
+        <Filename Value="source\TplPlayWAVUnit.pas"/>
+        <UnitName Value="TplPlayWAVUnit"/>
+      </Item13>
+      <Item14>
+        <Filename Value="source\TplProcessThreadUnit.pas"/>
+        <UnitName Value="TplProcessThreadUnit"/>
+      </Item14>
+      <Item15>
+        <Filename Value="source\TplResStoreUnit.pas"/>
+        <UnitName Value="TplResStoreUnit"/>
+      </Item15>
+      <Item16>
+        <Filename Value="source\TplTimerUnit.pas"/>
+        <UnitName Value="TplTimerUnit"/>
+      </Item16>
+      <Item17>
+        <Filename Value="source\ucmdbox.pas"/>
+        <UnitName Value="uCmdBox"/>
+      </Item17>
+      <Item18>
+        <Filename Value="source\vd.inc"/>
+        <Type Value="Include"/>
+      </Item18>
+      <Item19>
+        <Filename Value="source\vd_compress.pas"/>
+        <UnitName Value="vd_compress"/>
+      </Item19>
+      <Item20>
+        <Filename Value="source\vd_core.pas"/>
+        <UnitName Value="vd_core"/>
+      </Item20>
+      <Item21>
+        <Filename Value="source\vd_masks.pas"/>
+        <UnitName Value="vd_masks"/>
+      </Item21>
+      <Item22>
+        <Filename Value="source\vd_resource.pas"/>
+        <UnitName Value="vd_resource"/>
+      </Item22>
+      <Item23>
+        <Filename Value="source\vd_system.pas"/>
+        <UnitName Value="vd_system"/>
+      </Item23>
+    </Files>
+    <RequiredPkgs Count="4">
+      <Item1>
+        <PackageName Value="SynEdit"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LCL"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="IDEIntf"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="FCL"/>
+        <MinVersion Major="1" Valid="True"/>
+      </Item4>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

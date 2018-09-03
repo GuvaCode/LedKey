@@ -1,0 +1,36 @@
+object Form1: TForm1
+  Left = 973
+  Height = 520
+  Top = 805
+  Width = 557
+  Caption = 'Simple TCmdBox Demo'
+  ClientHeight = 520
+  ClientWidth = 557
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '6.3'
+  object CmdBox1: TCmdBox
+    Left = 0
+    Height = 520
+    Top = 0
+    Width = 557
+    CaretColor = clWhite
+    CaretType = cartUser
+    CaretWidth = 1
+    CaretHeight = 12
+    CaretYShift = 3
+    OnInput = CmdBox1Input
+    LineCount = 1000
+    Font.Color = clLime
+    Font.Height = 16
+    BackGroundColor = clBlack
+    TabWidth = 60
+    HistoryMax = 10
+    InputSelColor = clBlue
+    InputSelBackGround = clWhite
+    CaretInterval = 500
+    EscapeCodeType = esctCmdBox
+    GraphicalCharacterWidth = 10
+    Align = alClient
+  end
+end

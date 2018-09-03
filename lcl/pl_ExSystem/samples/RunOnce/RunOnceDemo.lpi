@@ -2,75 +2,73 @@
 <CONFIG>
   <ProjectOptions>
     <Version Value="10"/>
+    <PathDelim Value="\"/>
     <General>
-      <SessionStorage Value="InProjectDir"/>
+      <Flags>
+        <SaveOnlyProjectUnits Value="True"/>
+      </Flags>
       <MainUnit Value="0"/>
-      <Title Value="ledkey"/>
+      <Title Value="RunOnceDemo"/>
+      <UseAppBundle Value="False"/>
       <ResourceType Value="res"/>
-      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
     </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
     <BuildModes Count="1">
-      <Item1 Name="Default" Default="True"/>
+      <Item1 Name="default" Default="True"/>
     </BuildModes>
     <PublishOptions>
       <Version Value="2"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|ppr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
     </PublishOptions>
     <RunParams>
       <local>
         <FormatVersion Value="1"/>
       </local>
     </RunParams>
-    <RequiredPackages Count="3">
+    <RequiredPackages Count="2">
       <Item1>
-        <PackageName Value="pl_exsystem"/>
+        <PackageName Value="etpackage"/>
       </Item1>
       <Item2>
-        <PackageName Value="codebot"/>
-      </Item2>
-      <Item3>
         <PackageName Value="LCL"/>
-      </Item3>
+      </Item2>
     </RequiredPackages>
-    <Units Count="4">
+    <Units Count="2">
       <Unit0>
-        <Filename Value="ledkey.lpr"/>
+        <Filename Value="RunOnceDemo.lpr"/>
         <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="47" Y="14"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
       </Unit0>
       <Unit1>
-        <Filename Value="munit.pas"/>
+        <Filename Value="runoncemainfrm.pas"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="mContainer"/>
+        <ComponentName Value="MainForm"/>
         <HasResources Value="True"/>
-        <ResourceBaseClass Value="DataModule"/>
-        <UnitName Value="mUnit"/>
-      </Unit1>
-      <Unit2>
-        <Filename Value="xtool.pas"/>
-        <IsPartOfProject Value="True"/>
-        <UnitName Value="XTool"/>
-      </Unit2>
-      <Unit3>
-        <Filename Value="uabout.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="AboutFrm"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="uAbout"/>
-      </Unit3>
+        <UnitName Value="RunOnceMainFrm"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="66" Y="7"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="11"/>
-    <Target>
-      <Filename Value="../bin/$(TargetCPU)-$(TargetOS)/ledkey"/>
-    </Target>
+    <PathDelim Value="\"/>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <UnitOutputDirectory Value="../tmp/$(TargetCPU)-$(TargetOS)"/>
+      <UnitOutputDirectory Value="..\xbin"/>
     </SearchPaths>
     <Linking>
-      <Debugging>
-        <GenerateDebugInfo Value="False"/>
-      </Debugging>
       <Options>
         <Win32>
           <GraphicApplication Value="True"/>
